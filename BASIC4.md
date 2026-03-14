@@ -90,4 +90,16 @@ if temp == rev:
 else:
     print("Not Palindrome")
 
+n = 10
+a = 0
+b = 1
+i = 0
 
+print("Fibonacci Series:")
+
+while i < n:
+    print(a, end=" ")
+    c = a + b
+    a = b
+    b = c
+    i += 1
