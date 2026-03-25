@@ -1,0 +1,94 @@
+
+
+1. Table (Multiplication Table)
+
+n = int(input("Enter the number: "))
+print("Table:")
+for i in range(1, 11):
+    print(n * i)
+
+
+---
+
+2. Factorial
+
+n = int(input("Enter the number: "))
+fact = 1
+
+for i in range(1, n + 1):
+    fact = fact * i
+
+print("Factorial:", fact)
+
+
+---
+
+3. Palindrome Number
+
+n = int(input("Enter the number: "))
+store = n
+rev = 0
+
+while n > 0:
+    digit = n % 10
+    rev = rev * 10 + digit
+    n = n // 10
+
+if store == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+
+---
+
+4. Reverse Number
+
+n = int(input("Enter the number: "))
+rev = 0
+
+while n > 0:
+    digit = n % 10
+    rev = rev * 10 + digit
+    n = n // 10
+
+print("Reverse:", rev)
+
+
+---
+
+5. Armstrong Number
+
+n = int(input("Enter the number: "))
+store = n
+sum = 0
+length = len(str(n))
+
+while n > 0:
+    digit = n % 10
+    sum = sum + digit ** length
+    n = n // 10
+
+if store == sum:
+    print("Armstrong")
+else:
+    print("Not Armstrong")
+
+
+---
+
+6. Number to Words (1–4)
+
+n = int(input("Enter the number: "))
+
+if n == 1:
+    print("One")
+elif n == 2:
+    print("Two")
+elif n == 3:
+    print("Three")
+elif n == 4:
+    print("Four")
+else:
+    print("Invalid input")
+
